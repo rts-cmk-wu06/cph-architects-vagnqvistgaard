@@ -1,0 +1,76 @@
+
+.Header {
+    background-color: #92B8B7;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: nowrap; */
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    gap: 0;
+}
+
+.Header .Header__heading {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FEFEFE;
+
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+
+    margin: 0.688rem 1rem;
+}
+
+.Header .Nav-flatline{
+    display: none;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+
+    .Header {
+        
+        grid-template-columns: auto 300px 372px auto;
+        grid-template-rows: 100%;
+
+    }
+
+    .Header .Nav{
+        display: none;
+    }
+
+    .Header .Nav-flatline {
+        display: block;
+    }
+
+    .Header .Header__heading {
+        grid-column: 2 / 3;
+        grid-row: 1 /2;
+    }
+
+    .Nav-flatline {
+        font-family: "Arial Narrow", sans-serif;
+        font-size: 1rem;
+        font-weight: 500; 
+        color: white;
+        text-decoration: none;
+        justify-self: end;
+        align-self: end;
+
+        grid-column: 3 / 4;
+        grid-row: 1 /2;
+
+        margin: 2rem;
+    }
+
+    .Nav-flatline a {
+        padding: 0 0.1rem;
+        color: white;
+        text-decoration: underline;
+
+    }
+
+
+}

@@ -1,0 +1,21 @@
+/* mobil 375px --> */
+
+.Container-arch {
+    
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: auto auto auto auto;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+   
+    .Container-arch {
+        width: 1024px;
+        grid-template-columns: auto 336px 336px auto;
+    }
+    
+}
+
+

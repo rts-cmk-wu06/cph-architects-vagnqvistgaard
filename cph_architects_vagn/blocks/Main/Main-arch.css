@@ -1,0 +1,99 @@
+.Main-arch {
+    margin: 0 1rem 1rem 1rem; 
+} 
+
+.Main-arch .Main-arch__archcard {
+    height: 416px; 
+    background-color: #BCDFDE;
+
+    display: grid;
+    grid-template-columns: 343px;
+    grid-template-rows: 307px 109px;
+
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+/* forældrerollen overgår til Main-arch__archcard */
+
+.Main-arch__archcard .Img-module {
+    grid-column: 1 / 2;
+    grid-row:  1 / 2;
+}
+
+/* .Main-arch__archcard .Text-head {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center; 
+    margin-left: 1rem;
+    align-self: center;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+.Main-arch__archcard .Text-body {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    line-height: 18pt;
+}
+
+.Main-arch .Main-arch__villain {
+    display: none;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+    
+    .Main-arch {
+        margin: 0;
+    }
+
+    .Main-arch .Main-arch__archcard {
+        grid-template-columns: 512px 512px;
+        grid-template-rows: 368px; 
+    }
+
+    .Main-arch__archcard .Img-module img {
+        display: none;
+    }
+
+    .Main-arch__archcard .Img-module {
+        grid-column: 1 / 2;
+        grid-row:  1 / 2;
+        background-image: url("../../img/img_work_full.svg");
+        background-size: cover;
+    }
+
+    .Main-arch__archcard .Text-body {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin: 11rem;
+    }
+
+    .Main-arch .Main-arch__villain {
+        display: block;
+    }
+
+    .Main-arch .Main-arch__villain .Img-module {
+        background-image: url("../../img/img_arch_card.svg");
+        width: 1024px;
+        height: 667px;
+        background-size: cover;
+    }
+
+    .Main-arch .Main-arch__villain .Text-body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+        line-height: 18pt;
+        color: #707070;
+        width: 1024px;
+        height: 275px;
+        background-color: #BCDFDE;
+    }
+    
+}

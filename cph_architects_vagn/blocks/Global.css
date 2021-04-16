@@ -1,0 +1,18 @@
+/* --- mobil <= 671px ----- */
+
+.Global {
+    box-sizing: border-box;
+
+    background-color: #FEFEFE;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 601px){
+
+    .Global{
+        margin: 0 auto;
+    }
+}

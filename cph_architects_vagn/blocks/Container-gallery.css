@@ -1,0 +1,22 @@
+/* mobil 375px --> */
+
+.Container-gallery{
+
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(3, minmax(70px, auto));
+}
+
+
+
+/* -------- dsktp/tblt -------- */
+
+
+@media screen and (min-width: 672px){
+    
+    .Container {
+        /* width: 1024px; */
+        grid-template-columns: auto 176px 672px 176 auto;
+        grid-template-rows: auto auto auto;
+    }
+}

@@ -1,0 +1,19 @@
+.Hero-work {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    color: #707070; 
+}
+
+.Hero-work .Hero-work__heading{
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.Hero-work .Hero-work__body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 18pt;
+    margin: 1rem;
+}

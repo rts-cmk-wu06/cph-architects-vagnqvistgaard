@@ -1,0 +1,31 @@
+.Hero {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    color: #707070; 
+}
+
+
+.Hero .Hero__heading{
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.Hero .Hero__body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 18pt;
+    margin: 1rem;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+    
+    .Hero {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+    }
+}

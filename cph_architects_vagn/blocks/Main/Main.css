@@ -1,0 +1,60 @@
+.Main {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0 1rem 1rem 1rem; 
+} 
+
+.Main .Main__teasercard {
+    height: 11rem; 
+    background-color: #BCDFDE;
+
+    display: grid;
+    grid-template-columns: 7.5rem 14rem;
+    grid-template-rows: repeat(3, 3.7rem);
+
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+/* forældrerollen overgår til Main__teasercard */
+
+.Main__teasercard .Img-module {
+    /* width: 120px;
+    height: 176px; */
+
+    grid-column: 1 / 2;
+    grid-row: 1 / span 3;
+}
+
+.Main__teasercard .Text-head {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 1rem;
+    align-self: center;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Main__teasercard .Text-body {
+    grid-column: 2 / 3;
+    grid-row: 2 / span 3;
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    line-height: 18pt;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+    .Main {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .Main .Main__teasercard {
+        grid-template-columns: 7.5rem 33.5rem;
+    }
+}
+

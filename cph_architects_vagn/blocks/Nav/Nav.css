@@ -1,0 +1,41 @@
+
+.Nav {
+    /* display: inline-block; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    cursor: pointer;
+  }
+
+.Nav__img {
+    margin: 0.688rem 1rem;
+    /* margin-left: 2.2rem; */
+    justify-self: center;
+    align-self: center; 
+}
+  
+  .Nav__contentlist {
+    font-family: Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: #FEFEFE;
+    text-decoration: none;
+
+    display: none;
+    background-color: #707070;
+    min-width: 375px;
+    margin: 1rem -20rem ;
+    
+    list-style-type: none;
+  }
+
+  .Nav__contentlist li {
+      margin: 0.75rem 0.5rem;
+  }
+
+  .Nav__contentlist li a {
+      color: inherit;
+  }
+  
+  .Nav:hover .Nav__contentlist {
+    display: block;
+  }

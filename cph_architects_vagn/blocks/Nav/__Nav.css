@@ -1,0 +1,83 @@
+.Nav {
+    margin: 0.688rem 1rem;
+    margin-left: 2.2rem;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+/* ============================================== */
+
+
+ /* .Nav .Nav__menu * {
+    font-family: Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: #FEFEFE;
+    text-decoration: none;
+
+}  */
+
+.Nav .Nav__menu{
+    /* background-color: blue;
+    width: 70%; */
+    /* margin: 0 auto;  */
+    display: flex;
+    
+}
+
+/* .menuen {
+    margin: 0 auto;
+    top: 10px;
+    position: relative;
+    padding: 10px; 
+} */
+
+.Nav .Nav__menu:hover{
+    cursor: pointer;
+}
+
+/* .Nav .Nav__menu-list {
+    background-color: #707070;
+    list-style: none;
+
+    
+} */
+
+.Nav .Nav__menu-list li{
+    margin: 20px;
+}
+
+.Nav__menu .Nav__menulist li a {
+    color: #FEFEFE;
+    text-decoration: none;
+} 
+
+.Nav .Nav__menu-list {
+    background-color: #707070;
+    list-style: none;
+
+    font-family: Verdana, sans-serif;
+    font-size: 1.25rem;
+    color: #FEFEFE;
+    text-decoration: none;
+
+    display: none;
+    position: absolute;
+    width: 100vw;
+    top: 2.5rem;
+    /* z-index: 20; */
+}
+
+.Nav .Nav__menu:hover .Nav__menu-list {
+    display: block;
+}
+
+/* --------- dsktp/tblt > 671 ------- */
+
+@media screen and (min-width: 672px){
+    .Nav {
+        display: none;
+
+        /* flatline menu -> display: block; */
+    }
+
+}
